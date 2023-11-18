@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project through bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ICoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                     Login
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                      SignUp
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to ICoder</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Password" id="inputPassword">
+              <button type="button" class="btn btn-primary mt-4">Login</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SignUp Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignUpModalLabel">SigUp for ICoder Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="cexampleFormControlInput1" class="form-label">User Name</label>
+            <input type="text" class="form-control mb-4" id="userexampleFormControlInput1" placeholder="User Name">
+            <label for="cexampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="cexampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Password" id="inputPassword">
+          <label for="inputPassword" class="col-sm-2col-form-label mt-4 mb-2">Conform Password</label>
+              <input type="password" class="form-control" placeholder="Conform Password" id="inputPassword">
+              <button type="button" class="btn btn-primary mt-4">SignUp</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center mt-4 ms-3">
+            <div class="col-md-7 order-md-1">
+                <h2 class="featurette-heading">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Learn Coding with ICoder </font>
+                    </font><span class="text-muted">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">It will blow your mind.</font>
+                        </font>
+                    </span>
+                </h2>
+                <p class="lead">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">The human face is a complex and very distinct part of the
+                            body. </font>
+                        <font style="vertical-align: inherit;">In fact, it is one of the most complex signaling systems
+                            available to us; </font>
+                        <font style="vertical-align: inherit;">It includes more than 40 muscles that are structurally and
+                            functionally independent, so that each of them can operate independently of the others. </font>
+                        <font style="vertical-align: inherit;">It is one of the strongest indicators of emotions.</font>
+                    </font>
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="/images/about1.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"alt="">
+    
+            </div>
+        </div>
+    
+        <div class="row featurette d-flex justify-content-center align-items-center mt-4 ms-3">
+            <div class="col-md-7 order-md-1">
+                <h2 class="featurette-heading">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Start with HTML,CSS,JAVASCRIPT</font>
+                    </font><span class="text-muted">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">It will give you a best start</font>
+                        </font>
+                    </span>
+                </h2>
+                <p class="lead">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">The human face is a complex and very distinct part of the
+                            body. </font>
+                        <font style="vertical-align: inherit;">In fact, it is one of the most complex signaling systems
+                            available to us; </font>
+                        <font style="vertical-align: inherit;">It includes more than 40 muscles that are structurally and
+                            functionally independent, so that each of them can operate independently of the others. </font>
+                        <font style="vertical-align: inherit;">It is one of the strongest indicators of emotions.</font>
+                    </font>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="/images/about2.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"alt="">
+    
+            </div>
+        </div>
+    
+        <div class="row featurette d-flex justify-content-center align-items-center mt-4 ms-3">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Go through Bootstrap</font>
+                    </font><span class="text-muted">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">It will blow your mind.</font>
+                        </font>
+                    </span>
+                </h2>
+                <p class="lead">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">The human face is a complex and very distinct part of the
+                            body. </font>
+                        <font style="vertical-align: inherit;">In fact, it is one of the most complex signaling systems
+                            available to us; </font>
+                        <font style="vertical-align: inherit;">It includes more than 40 muscles that are structurally and
+                            functionally independent, so that each of them can operate independently of the others. </font>
+                        <font style="vertical-align: inherit;">It is one of the strongest indicators of emotions.</font>
+                    </font>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="/images/about3.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"alt="">
+            </div>
+        </div>
+    
+    </div>
+    <footer class="container mt-4">
+        <p class="float-end"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Back to top</font></font></a></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2023–2024 ICoder, Inc. </font><font style="vertical-align: inherit;">· </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacy Policy</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terms of Use</font></font></a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
